@@ -1,0 +1,21 @@
+name: List Default
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+    ubuntu_variables:
+    runs-on: ubuntu-latest
+    steps:
+    - run: env
+
+    windows_variable:
+    runs-on: windows-latest
+    steps:
+    - run: env
+ 
+    macos_variables:
+    runs-on: macos-latest
+    steps:
+    - run: env
